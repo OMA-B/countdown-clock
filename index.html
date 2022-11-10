@@ -22,7 +22,7 @@
                 <h1 class="custom-countdown">Create a Custom Countdown!</h1>
                 <form class="countdown-form">
                     <label for="title">Title</label>
-                    <input type="text" name="title" id="title" placeholder="Counting down to...">
+                    <input type="text" name="title" id="title" placeholder="What do you want to count down to?">
                     <label for="date">Select a Date</label>
                     <input type="date" name="date" id="date">
                     <input type="submit" value="submit" id="submit">
@@ -30,11 +30,12 @@
             </div>
             <!-- countdown container -->
             <div class="countdown-container" hidden>
+                <h1 class="countdown-title">Countdown Title</h1>
                 <ul class="timers">
-                    <li><span>8</span>DAYS</li>
-                    <li><span>22</span>HOURS</li>
-                    <li><span>10</span>MINUTES</li>
-                    <li><span>53</span>SECONDS</li>
+                    <li><span>8</span><div>DAYS</div></li>
+                    <li><span>22</span><div>HOURS</div></li>
+                    <li><span>10</span><div>MINUTES</div></li>
+                    <li><span>53</span><div>SECONDS</div></li>
                 </ul>
                 <input type="submit" value="reset" id="submit">
             </div>
@@ -43,6 +44,8 @@
                 <h1 class="countdown-complete">Countdown Complete!</h1>
                 <span class="complete-detail">Countdown finished on 2022-11-07</span>
                 <input type="submit" value="new countdown" id="submit">
+                <!-- audio to play when countdown has been completed -->
+                <audio src="assets/John Powell - Where No One Goes.mp3" loop hidden></audio>
             </div>
         </div>
     </div>

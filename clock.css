@@ -44,7 +44,7 @@ body, body * {
 }
 
 /* -------- form container ---------------------- */
-.custom-countdown, .countdown-complete {
+.custom-countdown, .countdown-title, .countdown-complete {
     text-align: center;
     font-size: 23px;
     margin-bottom: 12px;
@@ -77,6 +77,10 @@ input {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+#submit:hover {
+    filter: brightness(120%);
 }
 
 /* -------- countdown container ---------------------- */
