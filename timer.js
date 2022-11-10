@@ -40,7 +40,7 @@ const updateDOM = () => {
             countdown_time = date_set - today;
 
             // populate the computed time in the DOM
-            countdown_container.children[0].textContent = form_container.children[1].children[1].value;
+            countdown_container.children[0].textContent = countdown_title;
             // Day(s)
             timers[0].textContent = Math.floor(countdown_time / day);
             timers[0].textContent < 2 ? timers[0].parentElement.children[1].textContent = 'DAY' : timers[0].parentElement.children[1].textContent = 'DAYS';
