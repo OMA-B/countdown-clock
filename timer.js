@@ -112,8 +112,12 @@ complete_container.children[2].addEventListener('click', reset);
 
 // To continue already-set countdown On Load
 if (localStorage) {
-    const stored_countdown_data = JSON.parse(localStorage.getItem('countdown-data'));
-    countdown_date = stored_countdown_data.date;
-    countdown_title = stored_countdown_data.title;
-    updateDOM();
-}
+    try {
+        const stored_countdown_data = JSON.parse(localStorage.getItem('countdown-data'));
+        countdown_date = stored_countdown_data.date;
+        countdown_title = stored_countdown_data.title;
+        updateDOM();
+    } catch (error) {
+        console.log('No data found in localStorage');
+    }
+};
